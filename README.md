@@ -14,7 +14,7 @@ This allows for easy integration in homeassistant/node-red...
 - When recieved blink (fast!!) IR signal
 - Measure temperature
 
-** Parts List **
+**Parts List**
 - ESP32
 - 3 IR Led
 - IR Reciever (for recording the signals from the remote)

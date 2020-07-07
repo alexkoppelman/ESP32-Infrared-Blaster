@@ -19,7 +19,7 @@ const char* ssid = "XXXXXX";
 const char* password = "XXXXXX";
 const char* mqtt_server2 = "192.168.1.100";
 const char* mqtt_server = "XXXXX.duckdns.org";
-const char* mqttUser = "happyplants";
+const char* mqttUser = "XXXXXXX";
 const char* mqttPassword = "XXXXX";
 
 WiFiClient espClient;
@@ -186,7 +186,7 @@ void reconnect() {
       // Subscribe
       client.subscribe(LED_TOPIC);
       client.publish(STATUS_TOPIC, "EstufaControl Online");
-      client.publish(STATUS_TOPIC, "1:ON/OFF, 2:Temp up, 3:Temp down, 4:Get Current temp");
+      // client.publish(STATUS_TOPIC, "1:ON/OFF, 2:Temp up, 3:Temp down, 4:Get Current temp");
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
